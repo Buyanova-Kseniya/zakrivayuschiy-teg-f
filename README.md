@@ -1,1 +1,1 @@
-https://github.com/Buyanova-Kseniya/zakrivayuschiy-teg-f
+https://buyanova-kseniya.github.io/zakrivayuschiy-teg-f/
