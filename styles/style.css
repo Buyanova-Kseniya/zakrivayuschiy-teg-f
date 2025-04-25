@@ -13,7 +13,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, "Roboto", "Geneva", Arial, Helvetica, sans-serif);
   font-variation-settings: "wght" var(--font-weight-normal, 400);
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 .header {
   margin-block: 100px;
   padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-  font-family: var(--accent-font, fantasy);
+  font-family: var(--accent-font, "Roboto", "Geneva", Arial, Helvetica, fantasy);
   font-weight: var(--font-weight-normal, 400);
   border: 2px solid var(--border-color, #000);
   text-align: center;
@@ -124,7 +124,7 @@
   z-index: 1;
   inset-inline-end: 25px;
   inset-block-start: 25px;
-  font-family: var(--accent-font, fantasy);
+  font-family: var(--accent-font, "Roboto", "Geneva", Arial, Helvetica, fantasy);
   font-size: 14px;
   line-height: 1;
   text-shadow: -1px 0 var(--label-shadow-color, #fff),
@@ -181,7 +181,7 @@ main button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--accent-font, fantasy);
+  font-family: var(--accent-font, "Roboto", "Geneva", Arial, Helvetica, fantasy);
   font-size: 14px;
   line-height: 0.9;
   border: 2px solid var(--border-color, #000);
@@ -209,6 +209,7 @@ main button {
   max-inline-size: 335px;
   padding: 15px 18px;
   background-color: var(--page-item-bgc, #fff);
+
 }
 
 .floppy__button-icon {
@@ -252,12 +253,13 @@ main button {
   block-size: 39px;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  background-image: url(/svg/floppy.svg);
 }
 
 .floppy__dialog-message {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
-  font-family: var(--accent-font, fantasy);
+  font-family: var(--accent-font, "Roboto", "Geneva", Arial, Helvetica, fantasy);
   font-size: 14px;
   font-weight: var(--font-weight-normal, 400);
   line-height: 1.5;
@@ -305,7 +307,7 @@ button:focus {
 
 .like-icon:hover .core {
   fill: var(--like-contour-color, #000);
-  transition: fill 0.3s ease 0s;
+  transition: fill 0.5s ease-in-out;
 }
 
 .like-icon:active .core {
@@ -362,9 +364,6 @@ button:focus {
 }
 
 @media (width <=375px) {
-  :root {
-    --page-item-width: 100%;
-  }
 
   .card__label {
     inset-inline-end: 13px;
@@ -377,5 +376,9 @@ button:focus {
   .floppy__button-icon {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .card__title {
+    line-height: 22px;
   }
 }
