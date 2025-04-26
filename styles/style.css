@@ -382,3 +382,10 @@ button:focus {
     line-height: 22px;
   }
 }
+
+.floppy {
+  display: flex;
+  align-items: center;
+  justify-contenr: center;
+  gap: 20px;
+}
