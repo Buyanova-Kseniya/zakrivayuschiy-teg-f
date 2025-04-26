@@ -370,11 +370,15 @@
     </ul>
     <div class="floppy">
       <button class="floppy__button action-button-style" type="button" onclick="window['dialog-id'].showModal()">
-        <img src="./images/floppy.svg" class="floppy__button-icon" width="28" height="28">
+         <svg viewBox="0 0 40 40" class="floppy__icon-dialog">
+            <use href="./svg/floppy.svg#floppy" />
+          </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog id="dialog-id" class="floppy__dialog">
-        <img src="./images/floppy.svg" class="floppy__dialog-icon" width="39" height="39">
+         <svg viewBox="0 0 40 40" class="floppy__icon-dialog">
+            <use href="./svg/floppy.svg#floppy" />
+          </svg>
         <p class="floppy__dialog-message">Вставьте дискету, чтобы продолжить</p>
         <button class="floppy__dialog-button-close action-button-style" type="button"
           onclick="window['dialog-id'].close()">ok</button>
