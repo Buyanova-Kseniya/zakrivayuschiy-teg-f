@@ -77,6 +77,8 @@
 .card__images-container {
   position: relative;
   z-index: 0;
+   border-inline: 2px solid var(--border-color);
+  border-block-end: 2px solid var(--border-color, #000);
 }
 
 .card__image {
@@ -84,11 +86,6 @@
   inline-size: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-}
-
-.card__images-container {
-  border-inline: 2px solid var(--border-color);
-  border-block-end: 2px solid var(--border-color, #000);
 }
 
 .saturate {
