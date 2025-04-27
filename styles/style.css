@@ -23,7 +23,6 @@
   background-color: #808080;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .header {
@@ -209,7 +208,6 @@ main button {
   max-inline-size: 335px;
   padding: 15px 18px;
   background-color: var(--page-item-bgc, #fff);
-
 }
 
 .floppy__button-icon {
@@ -286,7 +284,7 @@ button:focus {
   box-shadow: 2px 2px var(--button-state-accent-color, #000);
 }
 
-.action-button-style:not(.floppy__dialog-button-close)::before {
+.action-button-style::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -294,10 +292,29 @@ button:focus {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.5s ease-in-out;
+  
 }
 
 .action-button-style:hover::before {
   transform: scaleX(1);
+}
+
+.icon-floppy {
+  min-width: 39px;
+  height: 39px;
+}
+
+.icon-floppy-btn {
+  width: 21px;
+  height: 21px;
+}
+
+.button__text,
+.icon-floppy-btn {
+  color: var(--color-button-animation);
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 2;
 }
 
 .core {
@@ -364,7 +381,6 @@ button:focus {
 }
 
 @media (width <=375px) {
-
   .card__label {
     inset-inline-end: 13px;
   }
