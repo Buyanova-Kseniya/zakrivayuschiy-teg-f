@@ -86,7 +86,7 @@
   object-fit: cover;
 }
 
-.card-list__item, .card__images-container {
+.card__images-container {
   border-inline: 2px solid var(--border-color);
   border-block-end: 2px solid var(--border-color, #000);
 }
