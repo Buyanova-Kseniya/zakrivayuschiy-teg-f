@@ -283,7 +283,7 @@ button:focus {
   box-shadow: 2px 2px var(--button-state-accent-color, #000);
 }
 
-.action-button-style:not(.floppy__dialog-button-close)::before {
+.action-button-style::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -293,7 +293,7 @@ button:focus {
   transition: transform 0.5s ease-in-out;
 }
 
-.action-button-style:not(.floppy__dialog-button-close):hover::before {
+.action-button-style:hover::before {
   transform: scaleX(1);
 }
 
