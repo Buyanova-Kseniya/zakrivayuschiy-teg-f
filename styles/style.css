@@ -66,7 +66,7 @@
 }
 
 .card__title {
-  padding-block: 3px;
+  padding-block: 5px 4px;
   padding-inline-start: 10px;
   font-size: 18px;
   line-height: 1.21;
@@ -302,12 +302,12 @@ button:focus {
 
 .core {
   fill: transparent;
-  transition: fill 0.3s ease-in 0.03s;
+  transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon:hover .core {
   fill: var(--like-contour-color, #000);
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s linear;
 }
 
 .like-icon:active .core {
