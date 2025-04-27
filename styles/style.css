@@ -23,6 +23,7 @@
   background-color: #808080;
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 .header {
@@ -65,7 +66,7 @@
 }
 
 .card__title {
-  padding-block: 5px 4px;
+  padding-block: 3px;
   padding-inline-start: 10px;
   font-size: 18px;
   line-height: 1.21;
@@ -85,7 +86,7 @@
   object-fit: cover;
 }
 
-.card__images-container {
+.card-list__item, .card__images-container {
   border-inline: 2px solid var(--border-color);
   border-block-end: 2px solid var(--border-color, #000);
 }
@@ -208,6 +209,7 @@ main button {
   max-inline-size: 335px;
   padding: 15px 18px;
   background-color: var(--page-item-bgc, #fff);
+
 }
 
 .floppy__button-icon {
@@ -284,7 +286,7 @@ button:focus {
   box-shadow: 2px 2px var(--button-state-accent-color, #000);
 }
 
-.action-button-style::before {
+.action-button-style:not(.floppy__dialog-button-close)::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -292,39 +294,20 @@ button:focus {
   transform: scaleX(0);
   transform-origin: left center;
   transition: transform 0.5s ease-in-out;
-  
 }
 
-.action-button-style:hover::before {
+.action-button-style:not(.floppy__dialog-button-close):hover::before {
   transform: scaleX(1);
-}
-
-.icon-floppy {
-  min-width: 39px;
-  height: 39px;
-}
-
-.icon-floppy-btn {
-  width: 21px;
-  height: 21px;
-}
-
-.button__text,
-.icon-floppy-btn {
-  color: var(--color-button-animation);
-  mix-blend-mode: difference;
-  position: relative;
-  z-index: 2;
 }
 
 .core {
   fill: transparent;
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s ease-in 0.03s;
 }
 
 .like-icon:hover .core {
   fill: var(--like-contour-color, #000);
-  transition: fill 0.5s linear;
+  transition: fill 0.5s ease-in-out;
 }
 
 .like-icon:active .core {
@@ -381,6 +364,7 @@ button:focus {
 }
 
 @media (width <=375px) {
+
   .card__label {
     inset-inline-end: 13px;
   }
