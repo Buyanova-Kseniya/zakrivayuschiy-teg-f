@@ -380,20 +380,10 @@ button:focus {
   }
 }
 
-.floppy__button {
-  color: black;
-  transition: color 0.3s ease;
-}
-
 .floppy__button:hover {
   color: white;
 }
 
 .floppy__button:hover .floppy__icon-dialog {
-  z-index: 100;
-  fill: white !important;
-}
-
-.floppy__icon-dialog {
-  fill: currentColor;
+  filter: brightness(0) invert(1);
 }
