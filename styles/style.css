@@ -398,3 +398,6 @@ button:focus {
   fill: currentColor;
 }
 
+.floppy__button:hover .floppy__icon-dialog {
+  fill: white !important;
+}
