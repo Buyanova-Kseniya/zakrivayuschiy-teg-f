@@ -380,11 +380,6 @@ button:focus {
   }
 }
 
-.floppy__button {
-  color: black;
-  transition: color 0.3 ease;
-}
-
 .floppy__button:hover {
   color: white;
 }
