@@ -1,14 +1,4 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
+/* Здесь вы напишете основную часть стилей страницы. */
 
 .page {
   min-inline-size: 320px;
@@ -23,7 +13,6 @@
   background-color: #808080;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .header {
@@ -208,7 +197,10 @@ main button {
   background-color: var(--page-item-bgc, #fff);
   color: black;
   transition: color 0.3s ease;
+}
 
+.floppy__button:hover {
+  color: white;
 }
 
 .floppy__button-icon {
@@ -363,7 +355,6 @@ button:focus {
 }
 
 @media (width <=375px) {
-
   .card__label {
     inset-inline-end: 13px;
   }
@@ -382,17 +373,11 @@ button:focus {
   }
 }
 
-.floppy__button:hover {
-  color: white;
-
-  .floppy__icon-dialog {
-    z-index: 100;
-    fill: white;
-  }
-}
-
-
 .floppy__icon-dialog {
   fill: currentColor;
 }
 
+.floppybutton:hover .floppyicon-dialog {
+  fill: white;
+  z-index: 100;
+}
