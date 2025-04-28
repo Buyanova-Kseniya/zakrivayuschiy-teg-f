@@ -377,7 +377,7 @@ button:focus {
   fill: currentColor;
 }
 
-.floppy__button:hover .floppyicon-dialog {
+.floppybutton:hover .floppyicon-dialog {
   fill: white;
   z-index: 100;
 }
