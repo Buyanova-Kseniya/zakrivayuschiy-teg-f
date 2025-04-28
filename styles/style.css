@@ -206,6 +206,8 @@ main button {
   max-inline-size: 335px;
   padding: 15px 18px;
   background-color: var(--page-item-bgc, #fff);
+  color: black;
+  transition: color 0.3s ease;
 
 }
 
@@ -378,11 +380,6 @@ button:focus {
   .card__title {
     line-height: 22px;
   }
-}
-
-.floppy__button {
-  color: black;
-  transition: color 0.3s ease;
 }
 
 .floppy__button:hover {
